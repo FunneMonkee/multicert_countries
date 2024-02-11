@@ -5,7 +5,7 @@ RUN apt-get install openjdk-17-jdk -y
 
 COPY . .
 
-RUN ./gradlew war --no-daemon
+RUN ./gradlew build --no-daemon
 
 FROM openjdk:17-jdk-slim
 
